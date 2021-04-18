@@ -1,5 +1,4 @@
 import pytest
-
 from task05.hw.task05 import find_maximal_subarray_sum
 
 
