@@ -2,7 +2,7 @@ import os
 
 from task03.hw.task03 import find_maximum_and_minimum
 
-os.chdir(r".\homework1\task03\tests")
+os.chdir(r"./homework1/task03/tests")
 
 
 def test_positive_for_sorted_dataset():
@@ -14,5 +14,4 @@ def test_positive_for_sorted_dataset():
 def test_positive_for_zero_dataset():
     """Testing function on dataset with zero values"""
     result = find_maximum_and_minimum("task03_dataset2.txt")
-    # result = find_maximum_and_minimum(os.path.join('tests', 'task03_dataset2.txt'))
     assert result == (0, 0)
