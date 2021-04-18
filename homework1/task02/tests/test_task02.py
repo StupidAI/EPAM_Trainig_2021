@@ -1,4 +1,4 @@
-from hw.task02 import check_fibonacci
+from task02.hw.task02 import check_fibonacci
 
 
 def test_positive_from_zero_seq():
