@@ -16,11 +16,10 @@ from typing import List
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     if len(nums) < k:
         raise Exception('Input "k" is longer than given "nums" lenght')
-    max = -sys.maxsize - 1
+    max_val = -sys.maxsize - 1
     steps = len(nums) - k + 1
     for i in range(steps):
         sliced_num = nums[i : i + k]
         cur_sum = sum(sliced_num)
-        if max < cur_sum:
-            max = cur_sum
-    return max
+        max_val = max(max_val, cur_sum)
+    return max_val
