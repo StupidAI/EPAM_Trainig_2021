@@ -48,9 +48,3 @@ def test_negative_from_seq_of_two():
     data_to_process = [4181, 6765]
     # data_to_process = [6765]
     assert not check_fibonacci(data_to_process)
-
-
-def test_negative_from_seq_of_one():
-    """Testing that sequence is incorrect: len less than 3"""
-    data_to_process = [6765]
-    assert not check_fibonacci(data_to_process)
