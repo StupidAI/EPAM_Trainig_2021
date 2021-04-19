@@ -11,10 +11,15 @@ from typing import List
 
 def check_sum_of_four(a: List[int], b: List[int], c: List[int], d: List[int]) -> int:
     result = 0
+    map_of_sums = {}
     for i in a:
         for j in b:
-            for k in c:
-                for l in d:
-                    if i + j + k + l == 0:
-                        result += 1
+            if (i + j) not in map_of_sums:
+                map_of_sums[i + j] = 1
+            else:
+                map_of_sums[i + j] = +1
+    for k in c:
+        for l in d:
+            if -(k + l) in map_of_sums:
+                result += map_of_sums[-(k + l)]
     return result
