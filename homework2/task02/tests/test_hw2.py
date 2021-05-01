@@ -1,4 +1,5 @@
 import pytest
+
 from homework2.task02.hw.hw2 import major_and_minor_elem
 
 
