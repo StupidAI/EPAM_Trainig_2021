@@ -1,5 +1,5 @@
 import pytest
-from task03.hw.hw3 import combinations
+from homework2.task03.hw.hw3 import combinations
 
 
 @pytest.mark.parametrize(

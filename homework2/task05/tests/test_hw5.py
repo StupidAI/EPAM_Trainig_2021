@@ -1,7 +1,7 @@
 import string
 
 import pytest
-from task05.hw.hw5 import custom_range
+from homework2.task05.hw.hw5 import custom_range
 
 
 @pytest.mark.parametrize(

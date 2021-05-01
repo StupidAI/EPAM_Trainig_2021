@@ -1,4 +1,4 @@
-from task04.hw.hw4 import cache
+from homework2.task04.hw.hw4 import cache
 
 
 def test_cache():
